@@ -1,0 +1,64 @@
+.card {
+    background-color: white;
+    max-width: 34rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    text-align: center;
+
+    &__header {
+        &__cover {
+            width: 100%;
+        }
+    }
+
+    &__main {
+        position: relative;
+        padding: 7rem 6rem 3rem;
+
+        &__avatar {
+            display: block;
+            width: 11rem;
+            height: 11rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 6px solid white;
+        }
+
+        &__name {
+            font-size: 1.8rem;
+
+            &__age {
+                font-weight: 400;
+                color: $dark-grayish-blue;
+            }
+        }
+
+        &__location {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            color: $dark-grayish-blue;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(214, 214, 214);
+        padding: 3rem 3.5rem;
+
+        &__stats {
+            &__number {
+                font-weight: 700;
+            }
+
+            &__desc {
+                font-size: 1.5rem;
+                color: $dark-gray;
+            }
+        }
+    }
+}
